@@ -1,0 +1,469 @@
+<html>
+    <head>
+        
+        <title> Portfolio - index</title>
+        <link rel="stylesheet" href="styles.css" type="text/css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+        <script src="script.js"></script>
+
+        <style>
+            /* service  */
+            /* each card */
+
+            .light-grey-bg {
+                background-color: rgb(139, 139, 139); /* Adjust the color code to your desired shade of light grey */
+            }
+            .light-grey-bg:hover {
+                background-color: rgb(30, 30, 30); /* Adjust the color code for the hover effect */
+                color:aliceblue;
+                text-shadow: 0 0 5px #ff0000, 0 0 10px #0000ff;
+            }
+
+            /* Proficiency */
+            .progress-container {
+                width: 50%;
+                /* margin: 0 auto; */
+                background-color: #e3b3fd;
+                border: 1px solid #5800b6;
+                border-radius: 32px;
+                overflow: hidden;
+                box-shadow: 0 0 2px red ,0 0 10px rgb(141, 31, 244),0 0 15px blue;
+                
+            }
+
+            .progress-bar {
+                
+                height: 20px;
+                background-color: #a21fe9;
+                
+                line-height: 20px;
+                
+                
+            }
+        
+        </style>
+
+        <script>
+            // intro - name 
+            var i=0;
+            var colors = ['red', 'blue', 'green', 'orange', 'purple'];
+            function changeColor() {
+                var h1Element = document.getElementById('changingH1');
+                i++;
+                var glow = colors[i];
+                h1Element.style.textShadow = "1px 1px 4px "+glow; 
+                if (i==5)
+                {
+                    i=0;
+                }
+            
+            }
+
+            setInterval(changeColor, 1000);
+
+            //  progress bar 
+
+            function   initializeProgressBars()
+            {
+                proficiency('webDev', 80);
+                proficiency('pythonDev', 70); 
+            }  
+
+            function proficiency(id, value) 
+            {
+            var progressBar = document.getElementById(id);
+            var width = 0;
+            
+            var interval = setInterval(function() {
+                                                        if (width >= value) 
+                                                        {
+                                                            clearInterval(interval);
+                                                        } 
+                                                        else 
+                                                        {
+                                                            width++;
+                                                            progressBar.style.width = width + '%';
+                                                        }
+                                                    }, 10); 
+            }
+
+        </script>
+    </head>
+
+    <body onload="initializeProgressBars()">
+
+
+        <!-- Navigation Bar  -->
+        <nav class="navbar navbar-expand-lg fixed-top navbarScroll">
+            <div class="container">
+                <a class="navbar-brand nav_bar" id="changingH1"  href="#">Ritesh</a>
+                
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto"  >
+                        <li class="nav-item active nav_bar">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item nav_bar">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item nav_bar">
+                            <a class="nav-link" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item nav_bar">
+                            <a class="nav-link" href="#proficiency">Proficiency</a>
+                        </li>
+                        <li class="nav-item nav_bar">
+                            <a class="nav-link" href="#Achievement">Achivements</a>
+                        </li>
+                        
+                        <li class="nav-item nav_bar">
+                            <a class="nav-link" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item nav_bar">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </nav>
+        
+
+        <!-- Short Intro & Description -->
+
+        <section class="bgimage" id="home">
+            <div class="container-fluid">
+                <div class="row">
+                
+                    <h1 class="person_title "   >Heyy!, it's me <span style="font-weight: bold ; font-size: 100px ;"> Ritesh </span>😉 </h1> 
+                    <br><br>
+                    <p class="person_desc">I am currently pursuing BE degree in Artificial Intelligence and Data Science</p>
+                
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+
+        <br>
+        
+        <section id="about">
+            <div class="container">
+                <h1 style="text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;" class="text-center"><i class="bi bi-file-person-fill" ></i> About Me</h1>
+                <div class="row mt-4">
+                    <!-- image -->
+                    <div class="circular-image" class="col-lg-4" >
+                        <img  src="profile_picture.jpeg" class= "imageAboutPage" alt="">
+                    </div>
+                    <!-- Description -->
+                    <div class="col-lg-8">
+                        <p> I am <b>Ritesh</b>, I'm a dedicated third-year BE (Bachelor of Engineering) student specializing in Artificial Intelligence and Data Science. I'm passionate about leveraging AI and data-driven insights to solve complex problems and make informed decisions. Excited to continue learning and contribute to the ever-evolving world of technology.
+                            
+                        </p>
+                        <!-- Details  -->
+                        <div class="row mt-3">
+                            <div class="col-md-7">
+                                <ul  style="font-weight: bold;">
+                                    <li >Name: Ritesh Girase</li>
+                                    <li >Age: 20 yrs</li>
+                                    <li >Calling : Student</li>
+    
+                                </ul>
+                            </div>
+                            
+                        </div>
+                        <!-- More -->
+                            <div class="col-md-20">
+                            <p></p>
+                           
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <!-- services -->
+
+        <section  id="services">
+            
+                
+            <div class="container">
+                
+                <h1  class="text text-center"> <i class="bi bi-tools"></i> Services</h1> 
+                    
+                    <div class="row">
+                        <div class="col-lg-4 mt-4">
+                            <div class="card servicesText light-grey-bg">
+                                <div class="card-body">
+                                    
+                                    <i class="bi bi-code-slash" style="font-size: 2rem; color: rgb(30, 6, 253);" ></i>
+                                    
+                                    <h4 class="card-title mt-3 text">Website Development</h4>
+                                    <p class="card-text mt-3">Create custom websites with the latest technologies, ensuring a seamless user experience.
+                                    </p>
+                                </div>
+                            </div>  
+                        </div>
+                        <div class="col-lg-4 mt-4">
+                            <div class="card servicesText light-grey-bg">
+                                <div class="card-body">
+                                    <i class="bi bi-browser-chrome" style="font-size: 2rem; color: rgb(30, 6, 253);"></i>
+                                    <i class="bi bi-browser-edge" style="font-size: 2rem; color: rgb(30, 6, 253);"></i>
+                                    <h4 class="card-title mt-3 text">Website Design</h4>
+                                    <p class="card-text mt-3">Captivate your audience with visually stunning website designs that align with your brand identity.
+                                    </p>
+                                </div>
+                            </div>  
+                        </div>
+        
+                        <div class="col-lg-4 mt-4">
+                            <div class="card servicesText light-grey-bg">
+                                <div class="card-body">
+                                    <i class="bi bi-filetype-py"  style="font-size: 2rem; color: rgb(30, 6, 253);"></i>
+                                    <h4 class="card-title mt-3 text">Python Development</h4>
+                                    <p class="card-text mt-3">Expert Python developers creating efficient and tailored solutions for your needs.
+                                    </p>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+        
+                    <div class="row">
+                        <div class="col-lg-4 mt-4">
+                            <div class="card servicesText light-grey-bg">
+                                <div class="card-body">
+                                    <i class="bi bi-filetype-java" style="font-size: 2rem; color: rgb(30, 6, 253);"></i>
+                                    <i class="bi bi-filetype-py" style="font-size: 2rem; color: rgb(30, 6, 253);"></i>
+                                    <i class="bi bi-filetype-js" style="font-size: 2rem; color: rgb(30, 6, 253);"></i>
+                                    <i class="bi bi-filetype-html" style="font-size: 2rem; color: rgb(30, 6, 253);"></i>
+                                    <i class="bi bi-filetype-css" style="font-size: 2rem; color: rgb(30, 6, 253);"></i>
+                                    <h4 class="card-title mt-3 text">Programming (C, C++, Java, Python, HTML, CSS, JS)</h4>
+                                    <p class="card-text mt-3">Proficient in a variety of programming languages for versatile and dynamic applications.
+                                    </p>
+                                </div>
+                            </div>  
+                        </div>
+        
+                        <div class="col-lg-4 mt-4">
+                            <div class="card servicesText light-grey-bg">
+                                <div class="card-body">
+                                    <i class="bi bi-code-slash" style="font-size: 2rem; color: rgb(30, 6, 253);"></i>
+                                    <h4 class="card-title mt-3 text">Competitive Coding</h4>
+                                    <p class="card-text mt-3">Sharpen your coding skills and problem-solving abilities with our competitive coding expertise.
+                                    </p>
+                                </div>
+                            </div>  
+                        </div>
+        
+                        <div class="col-lg-4 mt-4">
+                            <div class="card servicesText light-grey-bg">
+                                <div class="card-body">
+                                    <i class="bi bi-person-raised-hand" style="font-size: 2rem; color: rgb(30, 6, 253);"></i>
+                                    <h4 class="card-title mt-3 text">QA</h4>
+                                    <p class="card-text mt-3">Ensure a seamless and error-free user experience through rigorous testing and bug resolution.
+                                    </p>
+                                </div>
+                            </div>  
+                        </div>
+                        
+                    </div>
+   
+                
+            </div>
+        </section>
+
+        <!-- Proficiency -->
+        <br><br>
+        <section id="proficiency">
+            <div class="container ">
+                
+                <h1  class="text text-center">  <i class="bi bi-graph-up"></i> Proficiency</h1> 
+
+                <div class="text_process_bar" >Web Dev <br> 
+
+                    <div class="progress-container">
+                        
+                        <div class="progress-bar" id="webDev"> </div>
+                    </div> 
+                </div>
+
+                <br>
+
+                <div class="text_process_bar" >Python Dev <br> 
+
+                    <div class="progress-container">
+                        
+                        <div class="progress-bar" id="pythonDev"> </div>
+                    </div> 
+                </div>
+
+
+            </div>  
+        </section>
+
+
+        <!-- achievement -->
+        <br><br>
+        <section id="Achievement">
+            <div class="container">
+                
+                <h1  class="text text-center">  <i class="bi bi-check2-circle"></i> Certificates / <i class="bi bi-award"></i> Achivements</h1>
+                
+                <div class="row">
+                    <!-- certificate 1 -->
+                    <h1  class="text text-center">  <i class="bi bi-check2-circle"></i> 2021</h1>
+                    <div class="certificate-image" class="col-lg-4" >
+                        <img  src="certificate1.jpeg" class= "imageAboutPage" alt="">
+                    </div>
+    
+                    <div class="col-md-6">
+                        <p> Google certificate ...
+                            
+                        </p>
+                        <!-- <div class="row mt-3"> -->
+                            <div class="col-md-6">
+                                <ul>
+                                    <li >Year : 2021</li>
+                                    <li >Place : Nashik</li>
+                                    <li ></li>
+    
+                                </ul>
+                            </div>
+                            
+                        <!-- </div> -->
+                        
+                        
+                    </div>
+                </div>
+                    <!-- certificate 2 -->
+                <div class="row">
+                    <h1  class="text text-center">  <i class="bi bi-check2-circle"></i> 2021</h1>
+                    <div class="certificate-image" class="col-lg-4" >
+                        <img  src="certificate2.webp" class= "imageAboutPage" alt="">
+                    </div>
+    
+                    <div class="col-md-6">
+                        <p> LinkedIn certificate ...
+                            
+                        </p>
+                        <!-- <div class="row mt-3"> -->
+                            <div class="col-md-6">
+                                <ul>
+                                    <li >Year : 2021</li>
+                                    <li >Place : Nashik</li>
+                                    <li ></li>
+    
+                                </ul>
+                            </div>
+                            
+                        <!-- </div> -->
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- projects -->
+        <br>
+        <section id="projects">
+            <div class="container mt-3">
+                <h1 class="text text-center"><i class="bi bi-file-earmark-check"></i> Projects</h1>
+                <div class="row">
+                    <div class="col-lg-4 mt-4">
+                        <div class="card">
+                            <img class="card-img-top" src="pp.png" alt="Card image" style="width:100%">
+                            <div class="card-body">
+                                <h4 class="text card-title">Personal Portfolio</h4>
+                                <p class="card-text">This is simply Portfolio Project</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-lg-4 mt-4">
+                        <div class="card portfolioContent">
+                            <img class="card-img-top" src="lp.png" alt="Card image" style="width:100%">
+                            <div class="card-body">
+                                <h4 class="text card-title">Landing page</h4>
+                                <p class=" card-text">This Basic Landing Page Example </p>
+                                
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-lg-4 mt-4">
+                        <div class="card portfolioContent">
+                            <img class="card-img-top" src="cal.png" alt="Card image" style="width:100%">
+                            <div class="card-body">
+                                <h4 class="text card-title">Calculator</h4>
+                                <p class="card-text">This is simply demonstration and working of Calculator</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <br>
+
+                
+    
+                    <div class="col-lg-4 mt-4">
+                        <div class="card portfolioContent">
+                            <img class="card-img-top" src="im.png" alt="Card image" style="width:100%">
+                            <div class="card-body">
+                                <h4 class="text card-title">Inventory Management Services</h4>
+                                <p class="card-text">This  is simple web based Inventory Management system  </p>
+                                
+                            </div>
+                        </div>
+                    </div>
+    
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- contact -->
+
+        <section id="contact">
+            <div class="container mt-3 contactContent">
+                <h1 class="text text-center"><i class="bi bi-person-lines-fill"></i> Contact Me</h1>
+    
+                <div class="row mt-4">
+                    <div class="col md-4">
+                        
+                        <div style="max-width:100%;overflow:hidden;color:red;width:500px;height:500px;">
+                            <div id="embedmap-canvas" style="height:100%; width:100%;max-width:100%;">
+                                <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=india&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8">
+    
+                                </iframe>
+                                
+                            </div>
+                            <a class="googlemaps-html" href="https://www.embed-map.com" id="get-data-forembedmap">https://www.embed-map.com</a>
+                            <style>#embedmap-canvas img{max-width:none!important;background:none!important;font-size: inherit;font-weight:inherit;}
+                            </style>
+                        </div>
+                    </div>
+    
+                    <div class="col md-4">
+                        <!-- form fields -->
+                        <form>
+                            <input type="text" class="form-control form-control-lg" placeholder="Name">
+                            <input type="email" class="form-control mt-3" placeholder="Email">
+                            <input type="text" class="form-control mt-3" placeholder="Subject">
+                            <div class="mb-3 mt-3">
+                                <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Project Details"></textarea>
+                            </div>
+                        </form>
+                        <button type="button" class="btn btn-success mt-3">Contact Me</button>
+                        
+                    </div>
+    
+                </div>
+            </div>
+        </section>
+       
+    </body>
+</html>

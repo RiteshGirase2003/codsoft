@@ -1,0 +1,87 @@
+.text
+{
+    text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;
+}   
+
+.nav_bar:hover
+{
+    color:#0000ff;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+/* gif for intro */
+.bgimage {
+    height: 100vh;
+    background: url('man2.gif');
+    background-size: cover;
+    position: relative;
+}
+
+/* title - person name  */
+.person_title {
+    font-size: 4.5rem;
+    text-align: center;
+    position: absolute;
+    top: 60%;
+    align-self : center;
+    text-shadow:0 0 1px black,0 0 3px purple , 0 0 5px #ff0000, 0 0 10px #0000ff;  
+    color:rgb(202, 215, 228) ;
+}
+/* name */
+.name:hover
+{
+    font-size: 6rem ;
+}
+/* short intro for person */
+.person_desc {
+    font-size: 2rem;
+    top: 80%;
+    text-align: center;
+    position: absolute;
+    left : 25%;
+    text-shadow: 0 0 3px black ,0 0 7px #ff0000, 0 0 10px #0000ff;  
+    color:aliceblue;
+}
+
+/* image - about */
+.circular-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 80%;
+    
+    overflow: hidden;
+}
+
+.circular-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* proficiency */
+
+.text_process_bar
+{
+    text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;
+    font-size: 30px; 
+    font-weight: bold;
+} 
+/* ACHIEVEMENT */
+.certificate-image {
+    width: 200px;
+    height: 200px;
+    
+    
+    overflow: hidden;
+    
+}
+
+.certificate-image img {
+    width: 100%;
+    height: 100%;
+    
+    object-fit: cover;
+}
