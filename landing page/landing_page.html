@@ -1,0 +1,290 @@
+<html>
+    <head>
+        <title> </title>
+        <link rel="stylesheet" href="styles.css" type="text/css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       
+
+    </head>
+
+    <body style="background-color: azure; ">
+        <div>
+        <nav class="navbar navbar-expand-lg fixed-top navbarScroll">
+            <div class="container">
+                <a class="navbar-brand text"   style="font-weight: bold; font-style: oblique; font-size: 20px ;" href="#">IT Solutions</a> 
+                
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto"  >
+                        <li class="nav-item active nav_bar">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        
+                        <li class="nav-item nav_bar">
+                            <a class="nav-link" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item nav_bar">
+                            <a class="nav-link" href="#technology">technology</a>
+                        </li>
+                        <li class="nav-item nav_bar">
+                            <a class="nav-link" href="#about_team">About</a>
+                        </li>
+
+                        <li class="nav-item nav_bar">
+                            <a class="nav-link" href="contact.html">Support</a>
+                        </li>
+                        
+                        
+                        
+                    </ul>
+                    
+                </div>
+                
+            </div>
+            
+        </nav>
+        </div>
+        <!-- Short Intro & Description -->
+        <br><br>
+        <section class="bg-img" id="home">
+            <div class="content">
+                <h1>IT Solutions Co.</h1>                
+                
+            </div>
+        </section>
+
+        <div class="icon-bar">
+            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+            
+            <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+            <a href="contact.html" class="contact"><i class="bi bi-telephone-fill"></i></i></a>
+            
+          </div>
+
+        <!-- services -->
+        <br>
+        <br>
+        <section   id="services">
+            <p class="text-center" style="color:black">Services We Provide</p>
+                 
+                <div class="container mt-3">
+                    
+                    <h1 class="text text-center"><i class="bi bi-tools"></i> Services</h1>
+                    
+                    <div class="row">
+                        <div class="col-lg-4 mt-4 service">
+                            <div class="card">
+                                <img class="card-img-top" src="solution.jpg" alt="Card image" style="width:100%">
+                                <div class="card-body">
+                                    <h4 class="text card-title"> IT Solutions </h4>
+                                    <p class="card-text">IT solutions are custom technology-based answers for improving business processes and achieving goals. </p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    
+        
+                        
+                        <div class="col-lg-4 mt-4 service">
+                            <div class="card portfolioContent">
+                                <img class="card-img-top" src="help_desk.jpeg" alt="Card image" style="width:100%">
+                                <div class="card-body">
+                                    <h4 class="text card-title">Help Desk</h4>
+                                    <p class=" card-text">A help desk offers tech assistance and issue resolution to users, ensuring smooth operations.</p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                        
+                        
+                    </div>
+                </div>
+   
+                
+            </div>
+        </section>
+
+        <br>
+        <br>
+        
+
+        <section id="technology">
+            <p class="text-center" style="color:black">Areas We Serve</p>
+            <h1 class="text text-center"> Technologies </h1>
+            <div class="container">
+                <div class="bg-image img1"></div>
+                <div class="bg-image img2"></div>
+                <div class="bg-image img3"></div>
+                <div class="bg-image img4"></div>
+                <div class="bg-image img5"></div>
+                <div class="bg-image img6"></div>
+
+                <div class="bg-text none" id="big_data">
+                    <h1>Big Data</h1>
+                    <!-- <p>desc</p> -->
+
+                </div>
+                <div class="bg-text  none" id="ai">
+                    <h1>AI</h1>
+                    <!-- <p>desc</p> -->
+
+                </div>
+                <div class="bg-text none" id="ds">
+                    <h1>Data Science</h1>
+                    <!-- <p>desc</p> -->
+
+                </div>
+                <div class="bg-text none" id="gd">
+                    <h1>Graphics Design</h1>
+                    <!-- <p>desc</p> -->
+
+                </div>
+                <div class="bg-text none" id="ui">
+                    <h1>UI & UX</h1>
+                    <!-- <p>desc</p> -->
+
+                </div>
+                <div class="bg-text none" id="cloud">
+                    <h1>Cloud</h1>
+                    <!-- <p>desc</p> -->
+
+                </div>
+
+            </div>
+
+            <script>
+                function isElementPartiallyInViewport(el, visibilityPercentage) {
+                    const rect = el.getBoundingClientRect();
+                    const threshold = visibilityPercentage / 100;
+                    return (
+                        rect.bottom >= (threshold * window.innerHeight) &&
+                        rect.top <= ((1 - threshold) * window.innerHeight)
+                    );
+                }
+            
+                const image1 = document.querySelector('.img1'); 
+                const image2 = document.querySelector('.img2'); 
+                const image3 = document.querySelector('.img3');
+                const image4 = document.querySelector('.img4'); 
+                const image5 = document.querySelector('.img5');             
+                const image6 = document.querySelector('.img6'); 
+            
+                const textElement1 = document.getElementById('big_data');
+                const textElement2 = document.getElementById('ai');
+                const textElement3 = document.getElementById('ds');
+                const textElement4 = document.getElementById('gd');
+                const textElement5 = document.getElementById('ui');
+                const textElement6 = document.getElementById('cloud');
+            
+                const visibilityPercentage = 60; // Adjust this value for the desired visibility percentage
+            
+                window.addEventListener('scroll', function () {
+                    if (isElementPartiallyInViewport(image1, visibilityPercentage)) {
+                        textElement1.style.display = 'block';
+                    } else {
+                        textElement1.style.display = 'none';
+                    }
+            
+                    if (isElementPartiallyInViewport(image2, visibilityPercentage)) {
+                        textElement2.style.display = 'block';
+                    } else {
+                        textElement2.style.display = 'none';
+                    }
+            
+                    if (isElementPartiallyInViewport(image3, visibilityPercentage)) {
+                        textElement3.style.display = 'block';
+                    } else {
+                        textElement3.style.display = 'none';
+                    }
+            
+                    if (isElementPartiallyInViewport(image4, visibilityPercentage)) {
+                        textElement4.style.display = 'block';
+                    } else {
+                        textElement4.style.display = 'none';
+                    }
+            
+                    if (isElementPartiallyInViewport(image5, visibilityPercentage)) {
+                        textElement5.style.display = 'block';
+                    } else {
+                        textElement5.style.display = 'none';
+                    }
+            
+                    if (isElementPartiallyInViewport(image6, visibilityPercentage)) {
+                        textElement6.style.display = 'block';
+                    } else {
+                        textElement6.style.display = 'none';
+                    }
+                });
+            </script>
+        </section>
+
+        <br>
+        <br>
+        <!-- about team -->
+        <section id="about_team">
+            <p class="text-center" style="color:black">Introducing Team</p>
+            <h1 class="text text-center"><i class="bi bi-microsoft-teams"></i> About - Team </h1>
+            <div class="container">
+                <div class="row">
+                    <div class="column">
+                    <div class="card">
+                        <img src="profile_picture.jpeg" alt="Max" style="width:100%">
+                        <div class="container">
+                        <h2>Max</h2>
+                        <p class="title">CEO &amp; Founder</p>
+                        <p>A CEO is the top executive, responsible for overall leadership and decision-making within a company.</p>
+                        <p>Max@gmail.com</p>
+                        <!-- <p><button class="button">Contact</button></p> -->
+                        </div>
+                    </div>
+                    </div>
+                
+                    <div class="column">
+                    <div class="card">
+                        <img src="profile_picture.jpeg" alt="Mike" style="width:100%">
+                        <div class="container">
+                        <h2>Mike</h2>
+                        <p class="title">Art Director</p>
+                        <p>An art designer creates visual elements for aesthetics and appeal.</p>
+                        <p>Mike@gmail.com</p>
+                        <!-- <p><button class="button">Contact</button></p> -->
+                        </div>
+                    </div>
+                    </div>
+                
+                    <div class="column">
+                    <div class="card">
+                        <img src="profile_picture.jpeg" alt="John" style="width:100%">
+                        <div class="container">
+                        <h2>John</h2>
+                        <p class="title">Web Designer</p>
+                        <p>A web designer crafts engaging and functional websites. </p>
+                        <p>John@gmail.com</p>
+                        <!-- <p><button class="button">Contact</button></p> -->
+                        </div>
+                    </div>
+                    </div>
+                </div> 
+              </div>
+        </section>
+
+
+        <br>
+        <br>
+        <!-- reason  -->
+        <section>
+            <p class="text-center" style="color:black">Some Reason</p>
+            <h1 class="text text-center"> Why Choose Us ?</h1>
+            <div class="container footer">
+                <p class="footer-text" style="display: inline-block; margin-right: 20px;"><span class="footer_span">01 -</span> High Quality</p>
+                <p  class="footer-text" style="display: inline-block; margin-right: 20px;"><span class="footer_span">02 -</span> Dedicated 24/7</p>
+                <p  class="footer-text" style="display: inline-block;"><span class="footer_span">03 -</span> 30 days Money-Back Guarantee</p>
+            </div>
+            
+        </section>
+    </body>
+</html>

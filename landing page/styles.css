@@ -1,0 +1,247 @@
+.text
+{
+    text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;
+    color:aliceblue;
+}   
+
+.nav_bar:hover
+{
+    color:#0000ff;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/*  intro */
+.bg-img {
+
+background-image: url("gd1.jpg");
+
+
+min-height: 500px;
+
+
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+
+}  
+
+.content {
+position: absolute; /* Position the background text */
+bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+background: rgba(252, 254, 255, 0.466); 
+
+width: 60%; /* Full width */
+padding: 20px; /* Some padding */
+border-radius: 32px;
+}       
+
+.content:hover
+{
+    background: rgba(208, 244, 255, 0.42);
+    
+    
+}
+
+    
+
+    
+
+
+
+nav {
+    background: #b9def9;
+    /* display: flex; */
+    justify-content: space-between;
+    /* align-items: left; */
+    padding: 1rem 1.5rem;
+    box-shadow:0 0 3px blue, 0 0 10px #66b4fc;
+    }
+
+    .service:hover
+    {
+        border: black 1px solid;
+    }
+
+    .icon-bar {
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    }
+
+    /* Style the icon bar links */
+    .icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+    opacity: 0.5;
+    
+    }
+
+    /* Style the social media icons with color, if you want */
+    .icon-bar a:hover {
+        opacity: 1.0;
+    }
+
+    .facebook {
+    border-radius: 0px 15px 0 0;
+    background: #3B5998;
+    color: white;
+    }
+
+    .twitter {
+    background: #55ACEE;
+    color: white;
+    }
+
+    
+
+    .linkedin {
+    background: #007bb5;
+    color: white;
+    }
+
+    .contact {
+    background: #ff7130;
+    color: white;
+    border-radius: 0 0 15px 0;
+    }
+
+    
+    /* about team */
+    .column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+    width: 30%;
+    }
+
+   
+    @media screen and (max-width: 650px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
+    }
+
+   
+    .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    
+    .container {
+    padding: 0 16px;
+    }
+
+   
+    .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+    }
+
+    .title {
+    color: grey;
+    }
+
+    .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    }
+
+    .button:hover {
+    background-color: #555;
+    }
+
+    /* about */
+
+.bg-image {
+
+height: 100%;
+width: 100%;
+
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+/* Images used */
+.img1 { background-image: url("bigdata1.jpg"); }
+.img2 { background-image: url("ai.jpeg"); }
+.img3 { background-image: url("datascience1.jpeg"); }
+.img4 { background-image: url("graphicdesign1.png"); }
+.img5 { background-image: url("ui&ux.jpg"); }
+.img6 { background-image: url("DevOps_and_Cloud.png"); }
+
+
+.bg-text {
+background-color: rgb(0,0,0);
+background-color: rgba(0,0,0, 0.4); 
+color: white;
+font-weight: bold;
+font-size: 80px;
+border: 10px solid #f1f1f1;
+position: fixed; 
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+z-index: 2;
+width: 400px;
+padding: 20px;
+text-align: center;
+}
+
+
+/* footer */
+
+.footer {
+background-color: #c2f7ff;
+text-align: center;
+padding: 10px;
+border: 2px aqua solid; 
+border-radius: 15px;
+font-size: 20px;
+}
+.footer-text:hover
+{
+    font-size: 25px; 
+    font-weight: bold;
+}
+.footer_span
+{
+    color:#66b4fc;
+    font-weight: bold;
+}
+.bg-text h1{
+font-size: 40px;
+}
+
+.bg-text p
+{
+    font-size: 20px;
+   
+}
+.none
+{
+    display:none;
+}
+
+
+
+
+
