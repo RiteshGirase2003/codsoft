@@ -1,0 +1,61 @@
+PassengerId,Pclass,Name,Sex,Age,SibSp,Parch,Ticket,Fare,Cabin,Embarked
+1,1,"Smith, John",male,30,1,0,PC123,75,C24,C
+2,3,"Johnson, Sarah",female,25,0,1,A234,15,,S
+3,2,"Anderson, Peter",male,35,0,0,PC567,50,D36,C
+4,3,"Brown, Emily",female,20,1,1,C789,10,,S
+5,3,"Wilson, Mark",male,40,0,0,A432,8,,S
+6,2,"Davis, Laura",female,28,0,0,B987,30,,Q
+7,1,"Jones, Michael",male,45,1,2,PC999,100,B56,C
+8,3,"Thomas, Jessica",female,18,0,0,C654,7,,S
+9,3,"Taylor, David",male,22,0,0,A123,9,,S
+10,2,"Clark, Carol",female,50,1,0,PC444,60,E25,S
+11,1,"Harris, Jennifer",female,38,1,1,PC555,90,C89,Q
+12,3,"White, Robert",male,29,0,0,A678,7,,S
+13,2,"Anderson, Linda",female,24,0,1,B789,25,,S
+14,3,"Moore, Daniel",male,31,0,0,C345,8,,S
+15,1,"Martin, Laura",female,27,0,0,PC777,80,A12,C
+16,2,"Thompson, James",male,33,0,0,A876,10,,S
+17,2,"Lee, Karen",female,19,0,0,PC666,30,,S
+18,3,"King, Richard",male,32,0,0,A456,7,,Q
+19,3,"Wright, Mary",female,29,0,0,C123,7,,S
+20,1,"Parker, William",male,41,0,0,PC888,75,,S
+21,3,"Lopez, Maria",female,24,0,0,A981,8,,S
+22,2,"Garcia, Carlos",male,35,0,0,B345,15,,S
+23,1,"Smith, Jennifer",female,42,1,1,PC123,100,C27,S
+24,3,"Johnson, Paul",male,19,0,0,C456,10,,S
+25,3,"Brown, Michael",male,33,0,0,A234,7,,S
+26,1,"Davis, Laura",female,29,0,0,PC876,30,,C
+27,3,"Clark, James",male,25,1,0,A982,7,,S
+28,1,"Hill, Sarah",female,50,1,1,PC555,90,B45,S
+29,3,"Taylor, David",male,21,1,0,C789,8,,S
+30,3,"Perez, Laura",female,18,0,0,A123,9,,S
+31,2,"Gonzalez, Robert",male,28,0,0,B982,20,,S
+32,1,"Hall, Jessica",female,48,0,0,PC777,75,C12,C
+33,3,"Rivera, Carlos",male,22,0,0,C345,7,,S
+34,2,"Baker, Linda",female,38,0,0,B666,13,,S
+35,1,"Ramirez, John",male,40,0,0,PC888,50,,C
+36,1,"Flores, Laura",female,45,1,0,PC123,80,C19,S
+37,3,"Turner, David",male,29,0,0,A128,7,,S
+38,3,"Reed, Karen",female,18,0,0,C777,8,,Q
+39,3,"Murphy, James",male,32,0,0,A456,7,,S
+40,3,"Cook, Mary",female,27,0,0,C234,7,,S
+41,3,"Ahlin, Mrs. Johan (Johanna Persdotter Larsson)",female,40,1,0,7546,9.475,,S
+42,2,"Turpin, Mrs. William John Robert (Dorothy Ann Wonnacott)",female,27,1,0,11668,21,,S
+43,3,"Kraeff, Mr. Theodor",male,,0,0,349253,7.8958,,C
+44,2,"Laroche, Miss. Simonne Marie Anne Andree",female,3,1,2,SC/Paris 2123,41.5792,,C
+44,3,"Laroche, Miss. Simonne Marie Anne Andree",female,1,1,2,SC/Paris 2123,41.5792,,C
+45,3,"Devaney, Miss. Margaret Delia",female,19,0,0,330958,7.8792,,Q
+46,3,"Rogers, Mr. William John",male,,0,0,S.C./A.4. 23567,8.05,,S
+47,3,"Lennon, Mr. Denis",male,,1,0,370371,15.5,,Q
+48,3,"O'Driscoll, Miss. Bridget",female,,0,0,14311,7.75,,Q
+49,3,"Samaan, Mr. Youssef",male,,2,0,2662,21.6792,,C
+50,3,"Arnold-Franchi, Mrs. Josef (Josefine Franchi)",female,18,1,0,349237,17.8,,S
+51,3,"Panula, Master. Juha Niilo",male,7,4,1,3101295,39.6875,,S
+52,3,"Nosworthy, Mr. Richard Cater",male,21,0,0,A/4. 39886,7.8,,S
+53,1,"Harper, Mrs. Henry Sleeper (Myna Haxtun)",female,49,1,0,PC 17572,76.7292,D33,C
+54,2,"Faunthorpe, Mrs. Lizzie (Elizabeth Anne Wilkinson)",female,29,1,0,2926,26,,S
+54,3,"Faunthorpe, Mrs. Lizzie (Elizabeth Anne Wilkinson)",female,29,1,0,2926,26,,S
+55,1,"Ostby, Mr. Engelhart Cornelius",male,65,0,1,113509,61.9792,B30,C
+57,2,"Rugg, Miss. Emily",female,21,0,0,C.A. 31026,10.5,,S
+58,3,"Novel, Mr. Mansouer",male,28.5,0,0,2697,7.2292,,C
+56,1,"Woolner, Mr. Hugh",male,,0,0,19947,35.5,C52,S
